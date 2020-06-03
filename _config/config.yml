@@ -1,0 +1,14 @@
+---
+Name: checkoutagreetotermscmsconfig
+After:
+  - '#checkoutconfig'
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - SilverCommerce\Checkout\AgreeToTerms\SiteConfigExtension
+SilverCommerce\OrdersAdmin\Model\Estimate:
+  extensions:
+    - SilverCommerce\Checkout\AgreeToTerms\EstimateExtension
+SilverCommerce\Checkout\Control\Checkout:
+  extensions:
+    - SilverCommerce\Checkout\AgreeToTerms\CheckoutExtension

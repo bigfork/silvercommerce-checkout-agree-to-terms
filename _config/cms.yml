@@ -1,0 +1,10 @@
+---
+Name: checkoutagreetotermsconfig
+After:
+  - '#checkoutagreetotermscmsconfig'
+Only:
+  moduleexists: 'silverstripe/cms'
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - SilverCommerce\Checkout\AgreeToTerms\SiteConfigCMSExtension
