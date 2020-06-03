@@ -4,9 +4,8 @@ for (var i = 0; i < links.length; i++) {
     var element = links[i];
     var content = element
         .parentElement
-        .parentElement
         .getElementsByClassName("content-modal")[0]
-        .innerHTML;
+        .textContent;
 
     element.addEventListener("click", function(event) {
         var modal = new tingle.modal({
@@ -20,7 +19,7 @@ for (var i = 0; i < links.length; i++) {
             }
         });
 
-        modal.setContent();
+        modal.setContent(String(content));
         modal.open();
     });
 }
