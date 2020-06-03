@@ -2,3 +2,6 @@
     cursor: pointer;
     text-decoration: underline !important;
 }
+.tingle-modal--visible {
+    z-index: 9999;
+}
