@@ -1,0 +1,31 @@
+{
+    "name": "silvercommerce/checkout-agree-to-terms",
+    "description": "Requires users who purchases via the checkout process to agree to a terms and conditions checkbox",
+      "type": "silverstripe-vendormodule",
+      "homepage": "http://github.com/silvercommerce/checkout-agree-to-terms",
+      "keywords": [
+          "silverstripe",
+          "commerce",
+          "ecommerce",
+          "checkout",
+          "payments"
+      ],
+      "license": "BSD-3-Clause",
+      "authors": [
+          {
+              "name": "ilateral",
+              "email": "info@ilateral.co.uk"
+          }
+      ],
+      "support": {
+          "issues": "http://github.com/silvercommerce/checkout-agree-to-terms/issues"
+      },
+      "require": {
+          "silvercommerce/checkout": "~1.0"
+      },
+      "autoload": {
+          "psr-4": {
+              "SilverCommerce\\Checkout\\AgreeToTerms\\": "src/"
+          }
+      }
+  }
