@@ -21,8 +21,14 @@
           "issues": "http://github.com/silvercommerce/checkout-agree-to-terms/issues"
       },
       "require": {
-          "silvercommerce/checkout": "~1.0"
+          "silvercommerce/checkout": "dev-ss5"
       },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bigfork/silvercommerce-checkout"
+        }
+    ],
       "extra": {
           "expose": [
               "client"
